@@ -1,5 +1,5 @@
 # import files
-from flask import Flask,request,jsonify,send_file
+from flask import Flask,request,jsonify,send_file,current_app,send_from_directory
 import base64
 from skimage import io
 from sklearn.cluster import KMeans
@@ -11,22 +11,19 @@ app = Flask(__name__)
 
 @app.route('/')
 def index():
-    return '''Server Works!<hr>
-<form action="/processing" method="POST" enctype="multipart/form-data">
-<input type="file" name="image">
-<button>OK</button>
-</form>    
-'''
-@app.route("/compress", methods = ["POST"])
-def get_compressed_img():
-    return send_file('./assets/palm_trees.jpg', mimetype='image/gif')
+    return send_from_directory('','./index.html')
 
     
-@app.route('/processing', methods=['POST'])
+@app.route('/compress', methods=['POST'])
 def process():
+
+    # get the number of cluster
+    num_of_cluster = request.form.get("num_of_cluster")
+    print(num_of_cluster)
     # read image
     file = request.files['image']  
     img = io.imread(file)
+
 
     # get the height width and dimension
     (row,column,dimension) =  img.shape
@@ -35,7 +32,7 @@ def process():
     flat_img = img.reshape(row * column,dimension)
 
     # fit the model
-    k_mean = KMeans(n_clusters=2)
+    k_mean = KMeans(n_clusters= int(num_of_cluster))
     k_mean.fit(flat_img)
 
     # map it with nearest cluster
