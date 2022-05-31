@@ -9,7 +9,7 @@ It uses <b> K-Means </b>, a Machine Learning clustering algorithm, to cluster al
 
 ### Algorithm :  K-means Clustering
 
-<img src="./backend/assets/Kmeans_animation.gif" alt="Kmeans_animation.gif">
+<img src="./app/assets/Kmeans_animation.gif" alt="Kmeans_animation.gif">
 
 
 ### Comparison
@@ -18,9 +18,9 @@ It uses <b> K-Means </b>, a Machine Learning clustering algorithm, to cluster al
 #### Original Image(177kb) &#8195;&#8195;&#8195;&#8195;&#8195;&#8195;&#8195;&#8195;&#8195;&#8195;&#8195;&#8195;&#8195;&#8195;&#8195; Compressed Image(61kb)
  
 <div>
-<img src="./backend/assets/palm_trees.jpg" alt="palm_trees.jpg" width = 250>
+<img src="./app/assets/palm_trees.jpg" alt="palm_trees.jpg" width = 250>
  &#8195;&#8195;&#8195;&#8195;&#8195;&#8195;&#8195;&#8195;&#8195;&#8195;
-<img src="./backend/assets/compressed_image.png" alt="compressed_image.png" width = 250>
+<img src="./app/assets/compressed_image.png" alt="compressed_image.png" width = 250>
 </div>
 
 
@@ -31,7 +31,7 @@ It uses <b> K-Means </b>, a Machine Learning clustering algorithm, to cluster al
 #### Web App - Demo
 
 
-<img src="./backend/assets/k-means_img_compression-demo.gif" alt="demo.gif" width = 600>
+<img src="./app/assets/k-means_img_compression-demo.gif" alt="demo.gif" width = 600>
 
 
 
