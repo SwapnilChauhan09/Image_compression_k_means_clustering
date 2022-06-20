@@ -2,7 +2,7 @@
 
 This project is a lightweight Web App, <b>Flask</b> is used to serve the static HTML files and as a server.
 
-It uses <b> K-Means </b>, a Machine Learning clustering algorithm, to cluster all the colors in an image into N(specified by user) clusters. It replaces the RGB value of every pixel with the RGB value of their respective cluster center which results in reducing the amount of memory required to save a picture.
+It uses <b> K-Means </b>, A Machine Learning clustering algorithm, to cluster all the colors in an image into N(specified by user) clusters. It replaces the RGB value of every pixel with the RGB value of their respective cluster center which results in reducing the amount of memory required to save a picture.
 
 
 
