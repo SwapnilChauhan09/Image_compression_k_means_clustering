@@ -1,4 +1,4 @@
-# Image_compression_k_means_clusteringus
+# Image_compression_k_means_clustering
 
 This project is a lightweight Web App, <b>Flask</b> is used to serve the static HTML files and as a server.
 
